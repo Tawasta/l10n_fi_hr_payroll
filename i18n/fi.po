@@ -1,0 +1,83 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* finnish_salary
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20131203-002409\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-03 10:42+0000\n"
+"PO-Revision-Date: 2014-03-03 12:45+0200\n"
+"Last-Translator: Jesse Vartiainen <jesse@opensolutions.fi>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.7\n"
+
+#. module: finnish_salary
+#: view:hr.contract:0
+msgid "Salary"
+msgstr "Palkanlaskenta"
+
+#. module: finnish_salary
+#: field:hr.contract,base_tax_percentage:0
+msgid "Base tax percentage (%)"
+msgstr "Perusprosentti (%)"
+
+#. module: finnish_salary
+#: view:hr.contract:0
+msgid "Benefits"
+msgstr "Edut"
+
+#. module: finnish_salary
+#: field:hr.contract,extra_tax_percentage:0
+msgid "Extra tax percentage (%)"
+msgstr "Lisäprosentti (%)"
+
+#. module: finnish_salary
+#: field:hr.contract,benefit_car:0
+msgid "Car benefit"
+msgstr "Autoetu"
+
+#. module: finnish_salary
+#: field:hr.contract,benefit_other:0
+msgid "Other benefit"
+msgstr "Muu luontaisetu"
+
+#. module: finnish_salary
+#: field:hr.contract,benefit_lunch:0
+msgid "Lunch benefit"
+msgstr "Lounassetelietu"
+
+#. module: finnish_salary
+#: model:ir.model,name:finnish_salary.model_hr_contract
+msgid "Contract"
+msgstr "Sopimus"
+
+#. module: finnish_salary
+#: field:hr.contract,benefit_apartment:0
+msgid "Apartment benefit"
+msgstr "Asuntoetu"
+
+#. module: finnish_salary
+#: view:hr.contract:0
+msgid "Tax card"
+msgstr "Verokortti"
+
+#. module: finnish_salary
+#: code:addons/finnish_salary/contract.py:9 field:hr.contract,tax_card_type:0
+#, python-format
+msgid "Tax card type"
+msgstr "Verokortin tyyppi"
+
+#. module: finnish_salary
+#: field:hr.contract,monthly_income_limit:0
+msgid "Monthly income limit"
+msgstr "Kuukausituloraja"
+
+#. module: finnish_salary
+#: field:hr.contract,yearly_income_limit:0
+msgid "Yearly income limit"
+msgstr "Vuosituloraja"

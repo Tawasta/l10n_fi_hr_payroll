@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<openerp>
+   <data>
+	   
+	   <!-- Adds fields to hr contract form -->
+	   <record model="ir.ui.view" id="hr_contract_form_extension">
+    		<field name="name">hr.contract.form.extension</field>
+    		<field name="model">hr.contract</field>
+    		<field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+    		<field name="arch" type="xml">
+        		<data>
+					<notebook position="inside">
+						<page string="Salary">
+							<group string="Tax card">
+								<field name="tax_card_type" />
+								<field name="base_tax_percentage" />
+								<field name="extra_tax_percentage" />
+								<field name="yearly_income_limit" />
+								<field name="monthly_income_limit" />
+							</group>
+							<group string="Benefits">
+								<field name="benefit_car" />
+								<field name="benefit_apartment" />
+								<field name="benefit_lunch" />
+								<field name="benefit_other" />
+							</group>
+						</page>
+					</notebook>
+				</data>
+    		</field>
+		</record>
+	</data>
+</openerp>
