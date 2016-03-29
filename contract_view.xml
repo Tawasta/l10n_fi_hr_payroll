@@ -17,6 +17,7 @@
 								<field name="extra_tax_percentage" />
 								<field name="yearly_income_limit" />
 								<field name="monthly_income_limit" />
+								<field name="membership_fee"/>
 							</group>
 							<group string="Benefits">
 								<field name="benefit_car" />
