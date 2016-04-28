@@ -33,3 +33,23 @@ class hr_contract_finnish(osv.osv):
     }
 
 hr_contract_finnish()
+
+class hr_payslip_input(osv.osv):
+    _inherit='hr.payslip.input'
+    _columns={
+              'qty':fields.float('Quantity'),
+              'price':fields.float('Price')
+              }
+    
+    def onchange_qty_price(self, cr, uid, ids, qty, price,context=None):
+        if context is None:
+            context = {}
+        if qty and price:
+            amount = qty * price
+        else:
+            amount = 0.0
+        res = {'value':{
+                      'amount':amount
+                      }
+            }
+        return res

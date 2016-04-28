@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <openerp>
-   <data>
-	   
-	   <!-- Adds fields to hr contract form -->
-	   <record model="ir.ui.view" id="hr_contract_form_extension">
-    		<field name="name">hr.contract.form.extension</field>
-    		<field name="model">hr.contract</field>
-    		<field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
-    		<field name="arch" type="xml">
-        		<data>
+	<data>
+		
+		<!-- Adds fields to hr contract form -->
+		<record model="ir.ui.view" id="hr_contract_form_extension">
+			<field name="name">hr.contract.form.extension</field>
+			<field name="model">hr.contract</field>
+			<field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+			<field name="arch" type="xml">
+				<data>
 					<notebook position="inside">
 						<page string="Salary">
 							<group string="Tax card">
@@ -28,7 +28,26 @@
 						</page>
 					</notebook>
 				</data>
-    		</field>
+			</field>
+		</record>
+		
+		<!--Customize the hr payslip -->
+		
+		
+		<record model="ir.ui.view" id="hr_payslip_form_extension">
+			<field name="name">hr.payslip</field>
+			<field name="model">hr.payslip</field>
+			<field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="/form/sheet/notebook/page/field[@name='input_line_ids']/tree/field[@name='code']" position="after">
+                    <field name="qty" on_change="onchange_qty_price(qty,price)"/>
+                     <field name="price" on_change="onchange_qty_price(qty,price)"/>
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field[@name='input_line_ids']/form/group/field[@name='code']" position="after">
+                    <field name="qty" on_change="onchange_qty_price(qty,price)"/>
+                     <field name="price" on_change="onchange_qty_price(qty,price)"/>
+                </xpath>
+			</field>
 		</record>
 	</data>
 </openerp>
