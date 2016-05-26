@@ -18,6 +18,7 @@
 								<field name="yearly_income_limit" />
 								<field name="monthly_income_limit" />
 								<field name="membership_fee"/>
+								<field name="union"/>
 							</group>
 							<group string="Benefits">
 								<field name="benefit_car" />

@@ -18,6 +18,7 @@ class hr_contract_finnish(osv.osv):
         'benefit_lunch': fields.float('Lunch benefit', required=False),
         'benefit_other': fields.float('Other benefit', required=False),
         'membership_fee':fields.float('Membership fee (%)'),
+        'union':fields.char('Union'),
     }
     
     _defaults = {
