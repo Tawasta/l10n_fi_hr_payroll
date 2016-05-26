@@ -1,5 +1,6 @@
 from openerp.osv import osv, fields
 from openerp.tools.translate import _
+import openerp.addons.decimal_precision as dp
 
 class hr_contract_finnish(osv.osv):
     _name="hr.contract"
@@ -38,7 +39,10 @@ class hr_payslip_input(osv.osv):
     _inherit='hr.payslip.input'
     _columns={
               'qty':fields.float('Quantity'),
-              'price':fields.float('Price')
+              'price':fields.float('Price'),
+              'amount': fields.float('Amount',digits_compute=dp.get_precision('Payroll'), help="It is used in computation. For e.g. A rule for \
+              sales having 1% commission of basic salary for per product can defined in expression like \
+              result = inputs.SALEURO.amount * contract.wage*0.01."),
               }
     
     def onchange_qty_price(self, cr, uid, ids, qty, price,context=None):
