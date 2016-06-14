@@ -44,6 +44,9 @@
                     <field name="qty" on_change="onchange_qty_price(qty,price)"/>
                      <field name="price" on_change="onchange_qty_price(qty,price)"/>
                 </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="pay_days" />
+                </xpath>
                 <xpath expr="/form/sheet/notebook/page/field[@name='input_line_ids']/form/group/field[@name='code']" position="after">
                     <field name="qty" on_change="onchange_qty_price(qty,price)"/>
                      <field name="price" on_change="onchange_qty_price(qty,price)"/>

@@ -77,4 +77,5 @@ class hr_payslip(osv.osv):
     _description = 'Pay Slips'
     _columns = {
         'nb_of_days': fields.function(_get_nb_of_days, method=True, type='integer',string='Total no. of days in month'),
+         'pay_days': fields.date('Pay day'),
     }
