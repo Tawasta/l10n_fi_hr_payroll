@@ -32,6 +32,9 @@ Contributors
 ------------
 
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
+* Jukka Usmi <jukka.usmi@plan1st.fi>
+* Sami Mesiä <sami.mesia@plan1st.fi>
+* Vipin Kumar Tripathi <vipin.tripathi@verts.co.in>
 
 Maintainer
 ----------
