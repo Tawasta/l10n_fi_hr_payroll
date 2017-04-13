@@ -31,7 +31,7 @@ class HrContract(models.Model):
     benefit_lunch = fields.Float('Lunch benefit', required=False, default=0.0)
     benefit_other = fields.Float('Other benefit', required=False, default=0.0)
     membership_fee = fields.Float('Membership fee (%)')
-    union = fields.Char('Union'),
+    union = fields.Char('Union')
 
     # 3. Default methods
 

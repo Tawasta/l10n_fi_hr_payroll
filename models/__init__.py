@@ -1,1 +1,3 @@
 import contract
+import hr_contract
+import hr_payslip_input
