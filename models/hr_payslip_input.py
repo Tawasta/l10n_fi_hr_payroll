@@ -22,12 +22,12 @@ class HrPayslipInput(models.Model):
 
     # 2. Fields declaration
     qty = fields.Float('Quantity')
-    price = fields.Float('Price'),
+    price = fields.Float('Price')
     amount = fields.Float(
         string='Amount',
         digits_compute=dp.get_precision('Payroll'),
         help="It is used in computation. For e.g. A rule for sales having 1% commission of basic salary for \
-         per product can defined in expression like result = inputs.SALEURO.amount * contract.wage*0.01."),
+         per product can defined in expression like result = inputs.SALEURO.amount * contract.wage*0.01.")
 
     # 3. Default methods
 
