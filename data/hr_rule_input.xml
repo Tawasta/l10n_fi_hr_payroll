@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <!-- Finnish salary rule inputs. Ordered by code -->
+        <record id="hr_rule_input_A11" model="hr.rule.input">
+            <field name="name">Tuntipalkka</field>
+            <field name="code">A11</field>
+            <field name="input_id" ref="hr_salary_rule_1" />
+        </record>
+
+    </data>
+</openerp>

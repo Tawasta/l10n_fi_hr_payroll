@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <!-- Finnish salary rules. Ordered by code -->
+
+        <!-- Tuntipalkka -->
+        <record id="hr_salary_rule_1" model="hr.salary.rule">
+            <field name="name">Tuntipalkka</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">1</field>
+            <field name="sequence">1</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A11 and inputs.A11.amount)+(inputs.A12 and inputs.A12.amount)+(inputs.A13 and inputs.A13.amount)+(inputs.A14 and inputs.A14.amount)+(inputs.A15 and inputs.A15.amount)+(inputs.A16 and inputs.A16.amount)+(inputs.A17 and inputs.A17.amount)+(inputs.A18 and inputs.A18.amount)+(inputs.A19 and inputs.A19.amount)+(inputs.A191 and inputs.A191.amount)</field>
+        </record>
+
+    </data>
+</openerp>
