@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution
-#    Copyright (C) Open Solutions Finland 2013.
+#    Author: Oy Tawasta OS Technologies Ltd.
+#    Copyright Plan First Oy (http://www.plan1st.fi/)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -11,32 +11,36 @@
 #
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    along with this program. If not, see http://www.gnu.org/licenses/agpl.html
 #
 ##############################################################################
 
 {
-    "name" : "Finnish Salary",
-    "version" : "1.0",
-    "author" : "Open Solutions Finland",
-    "description" : """
-    OpenERP module that adds fields to HR contracts for calculating Finnish salaries
-    """,
-    "website" : "http://www.opensolutions.fi",
-    "depends" : ["base","hr", "hr_contract","hr_payroll"],
-    "category" : "Generic Modules",
-    "init_xml" : [],
-    "demo_xml" : [],
-    "data" : [
-              'contract_view.xml',
-                    ],
-    'test': [
-             ],
+    'name': 'Finnish Salary',
+    'summary': 'Adds fields to HR contracts for calculating Finnish salaries',
+    'version': '8.0.1.0.0',
+    'category': 'Human Resources',
+    'website': 'http://www.plan1st.fi',
+    'author': 'Oy Tawasta Technologies Ltd.',
+    'license': 'AGPL-3',
+    'application': False,
     'installable': True,
-    'active': False,
-    'certificate': '',
+    'external_dependencies': {
+        'python': [],
+        'bin': [],
+    },
+    'depends': [
+        'hr',
+        'hr_contract',
+        'hr_payroll',
+    ],
+    'data': [
+        'contract_view.xml',
+    ],
+    'demo': [
+    ],
 }
