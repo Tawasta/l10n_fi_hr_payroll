@@ -10,7 +10,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">1</field>
             <field name="sequence">1</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -23,7 +22,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">2</field>
             <field name="sequence">1</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -36,7 +34,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">3</field>
             <field name="sequence">2</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -49,7 +46,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">4</field>
             <field name="sequence">3</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -62,7 +58,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">8</field>
             <field name="sequence">1</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -75,7 +70,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">9</field>
             <field name="sequence">1</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -88,7 +82,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">11</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -101,7 +94,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">12</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -114,7 +106,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">13</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -127,7 +118,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">14</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -140,7 +130,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">15</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -154,7 +143,6 @@
             <field name="category_id" ref="hr_payroll.GROSS" />
             <field name="code">Brutto</field>
             <field name="sequence">20</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
@@ -167,7 +155,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">Brutto</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
@@ -195,7 +182,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">32</field>
             <field name="sequence">5</field>
-            <field name="condition_select">python</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -209,7 +195,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">33</field>
             <field name="sequence">5</field>
-            <field name="condition_select">python</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -223,7 +208,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">34</field>
             <field name="sequence">5</field>
-            <field name="condition_select">python</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -237,7 +221,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">34</field>
             <field name="sequence">5</field>
-            <field name="condition_select">python</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -250,7 +233,6 @@
             <field name="category_id" ref="hr_payroll.DED" />
             <field name="code">45</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -263,7 +245,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">51</field>
             <field name="sequence">11</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -276,7 +257,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">51</field>
             <field name="sequence">6</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -289,7 +269,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">53</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -302,7 +281,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">55</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -316,7 +294,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">57</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -329,7 +306,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">59</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -342,7 +318,6 @@
             <field name="category_id" ref="hr_payroll.DED" />
             <field name="code">61</field>
             <field name="sequence">4</field>
-            <field name="condition_select">none</field>
             <field name="quantity">-1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -355,7 +330,6 @@
             <field name="category_id" ref="hr_payroll.DED" />
             <field name="code">69</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -368,7 +342,6 @@
             <field name="category_id" ref="hr_salary_rule_category_jasenmaksut" />
             <field name="code">99</field>
             <field name="sequence">22</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
@@ -381,7 +354,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">101</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -395,7 +367,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">102</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -408,7 +379,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">103</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -421,7 +391,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">103</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -435,7 +404,6 @@
             <field name="category_id" ref="hr_salary_rule_category_vahennykset" />
             <field name="code">107</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -448,7 +416,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">113</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
@@ -461,7 +428,6 @@
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">122</field>
             <field name="sequence">10</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
@@ -474,7 +440,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">ALW001</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
@@ -488,7 +453,6 @@
             <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">ALW003</field>
             <field name="sequence">5</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
@@ -502,7 +466,6 @@
             <field name="category_id" ref="hr_payroll.NET" />
             <field name="code">NET</field>
             <field name="sequence">1000</field>
-            <field name="condition_select">none</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
