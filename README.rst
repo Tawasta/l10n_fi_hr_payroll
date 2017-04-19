@@ -31,6 +31,9 @@ Possibly missing rules
 - Sairausajan korvaus
 - Osapäiväraha
 
+Possible issues:
+- Code 34 appears twice
+
 Credits
 =======
 
