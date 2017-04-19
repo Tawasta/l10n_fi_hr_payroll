@@ -17,6 +17,19 @@
             <field name="amount_python_compute">result = (inputs.A11 and inputs.A11.amount)+(inputs.A12 and inputs.A12.amount)+(inputs.A13 and inputs.A13.amount)+(inputs.A14 and inputs.A14.amount)+(inputs.A15 and inputs.A15.amount)+(inputs.A16 and inputs.A16.amount)+(inputs.A17 and inputs.A17.amount)+(inputs.A18 and inputs.A18.amount)+(inputs.A19 and inputs.A19.amount)+(inputs.A191 and inputs.A191.amount)</field>
         </record>
 
+        <!-- Ylityölisä 50% -->
+        <record id="hr_salary_rule_11" model="hr.salary.rule">
+            <field name="name">Ylityölisä 50%</field>
+            <field name="category_id" ref="hr_salary_rule_category_vahennykset" />
+            <field name="code">11</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"></field>
+        </record>
+
         <!-- KM-korvaus lisähenkilö -->
         <record id="hr_salary_rule_101" model="hr.salary.rule">
             <field name="name">KM-korvaus lisähenkilö</field>
@@ -82,7 +95,6 @@
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.Vuokra1 and inputs.Vuokra1.amount)+(inputs.Vuokra2 and inputs.Vuokra2.amount)+(inputs.Vuokra3 and inputs.Vuokra3.amount)+(inputs.Vuokra4 and inputs.Vuokra4.amount)</field>
-            <field name="register_id" ref="hr_contribution_register_sairasajanpalkka" />
         </record>
 
         <!-- Rahapalkka -->

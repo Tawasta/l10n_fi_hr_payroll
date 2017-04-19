@@ -23,7 +23,8 @@ Usage
 
 Known issues / Roadmap
 ======================
-\-
+Possibly missing rules
+- Ylityölisä 50%
 
 Credits
 =======
