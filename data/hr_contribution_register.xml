@@ -23,12 +23,12 @@
             <field name="name">Päivärahat</field>
         </record>
 
-        <record id="hr_contribution_register_sairasajanpalkka" model="hr.contribution.register">
+        <record id="hr_contribution_register_sairasajan_palkka" model="hr.contribution.register">
             <field name="name">Sairasajanpalkka</field>
         </record>
 
-        <record id="hr_contribution_register_sairasajan_palkka" model="hr.contribution.register">
-            <field name="name">Sairasajanpalkka</field>
+        <record id="hr_contribution_register_sairasajan_korvaus" model="hr.contribution.register">
+            <field name="name">Sairasajan korvaus</field>
         </record>
 
         <record id="hr_contribution_register_sosiaaliturvamaksu" model="hr.contribution.register">
