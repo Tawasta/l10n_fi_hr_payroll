@@ -18,7 +18,7 @@
         <record id="hr_rule_input_A41" model="hr.rule.input">
             <field name="name">Urakka muut</field>
             <field name="code">A41</field>
-            <field name="input_id" ref="hr_salary_rule_3" />
+            <field name="input_id" ref="hr_salary_rule_4" />
         </record>
 
         <record id="hr_rule_input_A151" model="hr.rule.input">
@@ -43,6 +43,12 @@
             <field name="name">Kokopäiväraha</field>
             <field name="code">A321</field>
             <field name="input_id" ref="hr_salary_rule_32" />
+        </record>
+
+        <record id="hr_rule_input_ALOMA521" model="hr.rule.input">
+            <field name="name">Lomaraha</field>
+            <field name="code">ALOMA521</field>
+            <field name="input_id" ref="hr_salary_rule_51" />
         </record>
 
         <record id="hr_rule_input_A1021" model="hr.rule.input">
