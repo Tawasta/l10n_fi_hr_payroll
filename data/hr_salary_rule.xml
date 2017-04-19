@@ -362,6 +362,19 @@
             <field name="amount_python_compute"></field>
         </record>
 
+        <!-- Jäsenmaksu -->
+        <record id="hr_salary_rule_99" model="hr.salary.rule">
+            <field name="name">Jäsenmaksu</field>
+            <field name="category_id" ref="hr_salary_rule_category_jasenmaksut" />
+            <field name="code">99</field>
+            <field name="sequence">22</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (contract.membership_fee/100)*categories.Palkka*-1</field>
+        </record>
+
         <!-- KM-korvaus lisähenkilö -->
         <record id="hr_salary_rule_101" model="hr.salary.rule">
             <field name="name">KM-korvaus lisähenkilö</field>
