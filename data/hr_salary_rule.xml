@@ -71,6 +71,20 @@
             <field name="register_id" ref="hr_contribution_register_sairasajanpalkka" />
         </record>
 
+        <!-- Vuokra -->
+        <record id="hr_salary_rule_107" model="hr.salary.rule">
+            <field name="name">Vuokra</field>
+            <field name="category_id" ref="hr_salary_rule_category_vahennykset" />
+            <field name="code">107</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.Vuokra1 and inputs.Vuokra1.amount)+(inputs.Vuokra2 and inputs.Vuokra2.amount)+(inputs.Vuokra3 and inputs.Vuokra3.amount)+(inputs.Vuokra4 and inputs.Vuokra4.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_sairasajanpalkka" />
+        </record>
+
         <!-- Rahapalkka -->
         <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
             <field name="name">Rahapalkka</field>
