@@ -441,7 +441,7 @@
             <field name="code">ALW001</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0011 and inputs.ALW0011.amount)+(inputs.ALW0012 and inputs.ALW0012.amount)+(inputs.ALW0013 and inputs.ALW0013.amount)+(inputs.ALW0014 and inputs.ALW0014.amount)+(inputs.ALW0015 and inputs.ALW0015.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
@@ -454,7 +454,7 @@
             <field name="code">ALW003</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0031 and inputs.ALW0031.amount)+(inputs.ALW0032 and inputs.ALW0032.amount)+(inputs.ALW0033 and inputs.ALW0033.amount)+(inputs.A34 and inputs.ALW0034.amount)+(inputs.ALW0035 and inputs.ALW0035.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
@@ -467,7 +467,7 @@
             <field name="code">ALW004</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0041 and inputs.ALW0041.amount)+(inputs.ALW0042 and inputs.ALW0042.amount)+(inputs.ALW0043 and inputs.ALW0043.amount)+(inputs.ALW0044 and inputs.ALW0044.amount)+(inputs.ALW0045 and inputs.ALW0045.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
@@ -480,7 +480,7 @@
             <field name="code">ALW005</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0041 and inputs.ALW0041.amount)+(inputs.ALW0042 and inputs.ALW0042.amount)+(inputs.ALW0043 and inputs.ALW0043.amount)+(inputs.ALW0044 and inputs.ALW0044.amount)+(inputs.ALW0045 and inputs.ALW0045.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
@@ -493,7 +493,7 @@
             <field name="code">ALW006</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0061 and inputs.ALW0061.amount)+(inputs.ALW0062 and inputs.ALW0062.amount)+(inputs.ALW0063 and inputs.ALW0063.amount)+(inputs.ALW0064 and inputs.ALW0064.amount)+(inputs.ALW0065 and inputs.ALW0065.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
@@ -506,7 +506,7 @@
             <field name="code">ALW007</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0071 and inputs.ALW0071.amount)+(inputs.ALW0072 and inputs.ALW0072.amount)+(inputs.ALW0073 and inputs.ALW0073.amount)+(inputs.ALW0074 and inputs.ALW0074.amount)+(inputs.ALW0075 and inputs.ALW0075.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
@@ -519,10 +519,22 @@
             <field name="code">ALW008</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
-            <field name="appears_on_payslip" eval="False" />
+            <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.ALW0081 and inputs.ALW0081.amount)+(inputs.ALW0082 and inputs.ALW0082.amount)+(inputs.ALW0083 and inputs.ALW0083.amount)+(inputs.ALW0084 and inputs.ALW0084.amount)+(inputs.ALW0085 and inputs.ALW0085.amount)</field>
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
+        <!-- Vuosipalveluslisä -->
+        <record id="hr_salary_rule_alw010" model="hr.salary.rule">
+            <field name="name">Vuosipalveluslisä</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">ALW010</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.ALW0081 and inputs.ALW0081.amount)+(inputs.ALW0082 and inputs.ALW0082.amount)+(inputs.ALW0083 and inputs.ALW0083.amount)+(inputs.ALW0084 and inputs.ALW0084.amount)+(inputs.ALW0085 and inputs.ALW0085.amount)</field>
         </record>
 
         <!-- Nettopalkka -->
