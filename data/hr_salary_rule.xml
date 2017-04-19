@@ -44,6 +44,19 @@
             <field name="amount_python_compute">result = (inputs.A1021 and inputs.A1021.amount)+(inputs.A1022 and inputs.A1022.amount)+(inputs.A1023 and inputs.A1023.amount)+(inputs.A1024 and inputs.A1024.amount)+(inputs.A1025 and inputs.A1025.amount)</field>
         </record>
 
+        <!-- Ansiontasaus -->
+        <record id="hr_salary_rule_103" model="hr.salary.rule">
+            <field name="name">Ansiontasaus</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">103</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = result = (inputs.A1031 and inputs.A1031.amount)+(inputs.A1032 and inputs.A1032.amount)+(inputs.A1033 and inputs.A1033.amount)+(inputs.A1034 and inputs.A1034.amount)+(inputs.A1035 and inputs.A1035.amount)</field>
+        </record>
+
         <!-- Rahapalkka -->
         <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
             <field name="name">Rahapalkka</field>
