@@ -28,9 +28,15 @@
         </record>
 
         <record id="hr_rule_input_A311" model="hr.rule.input">
-            <field name="name">Osapäivärhat</field>
+            <field name="name">Osapäivärha</field>
             <field name="code">A311</field>
             <field name="input_id" ref="hr_salary_rule_31" />
+        </record>
+
+        <record id="hr_rule_input_A321" model="hr.rule.input">
+            <field name="name">Kokopäiväraha</field>
+            <field name="code">A321</field>
+            <field name="input_id" ref="hr_salary_rule_32" />
         </record>
 
         <record id="hr_rule_input_A1021" model="hr.rule.input">
