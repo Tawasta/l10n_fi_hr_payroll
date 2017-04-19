@@ -201,6 +201,19 @@
             <field name="amount_python_compute">result = categories.BASIC</field>
         </record>
 
+        <!-- Pekkaskorvaus -->
+        <record id="hr_salary_rule_27" model="hr.salary.rule">
+            <field name="name">Pekkaskorvaus</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">Brutto</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A271 and inputs.A271.amount)</field>
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>

@@ -12,7 +12,13 @@
         <record id="hr_rule_input_A151" model="hr.rule.input">
             <field name="name">Arkipyhäkorvaus</field>
             <field name="code">A151</field>
-            <field name="input_id" ref="hr_salary_rule_102" />
+            <field name="input_id" ref="hr_salary_rule_15" />
+        </record>
+
+        <record id="hr_rule_input_A271" model="hr.rule.input">
+            <field name="name">Pekkaskorvaus</field>
+            <field name="code">A271</field>
+            <field name="input_id" ref="hr_salary_rule_27" />
         </record>
 
         <record id="hr_rule_input_A1021" model="hr.rule.input">
