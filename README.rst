@@ -33,6 +33,7 @@ Possibly missing rules/amounts
 - Lomakorv. työsuhteen päättyessä
 - Yksityisajot
 - KM-korvaus mopedi
+- Ulosmittaus
 
 Possible issues:
 - Code 34 appears twice
