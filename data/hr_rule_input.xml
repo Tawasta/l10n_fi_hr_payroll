@@ -9,6 +9,18 @@
             <field name="input_id" ref="hr_payroll.hr_rule_basic" />
         </record>
 
+        <record id="hr_rule_input_A31" model="hr.rule.input">
+            <field name="name">Urakka sahatyöt</field>
+            <field name="code">A31</field>
+            <field name="input_id" ref="hr_salary_rule_3" />
+        </record>
+
+        <record id="hr_rule_input_A41" model="hr.rule.input">
+            <field name="name">Urakka muut</field>
+            <field name="code">A41</field>
+            <field name="input_id" ref="hr_salary_rule_3" />
+        </record>
+
         <record id="hr_rule_input_A151" model="hr.rule.input">
             <field name="name">Arkipyhäkorvaus</field>
             <field name="code">A151</field>
@@ -19,12 +31,6 @@
             <field name="name">Pekkaskorvaus</field>
             <field name="code">A271</field>
             <field name="input_id" ref="hr_salary_rule_27" />
-        </record>
-
-        <record id="hr_rule_input_A31" model="hr.rule.input">
-            <field name="name">Urakka sahatyöt</field>
-            <field name="code">A31</field>
-            <field name="input_id" ref="hr_salary_rule_3" />
         </record>
 
         <record id="hr_rule_input_A311" model="hr.rule.input">
