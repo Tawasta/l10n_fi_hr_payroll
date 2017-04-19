@@ -460,6 +460,19 @@
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
         </record>
 
+        <!-- Muu korvaus -->
+        <record id="hr_salary_rule_alw004" model="hr.salary.rule">
+            <field name="name">Muu korvaus</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">ALW004</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.ALW0041 and inputs.ALW0041.amount)+(inputs.ALW0042 and inputs.ALW0042.amount)+(inputs.ALW0043 and inputs.ALW0043.amount)+(inputs.ALW0044 and inputs.ALW0044.amount)+(inputs.ALW0045 and inputs.ALW0045.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
