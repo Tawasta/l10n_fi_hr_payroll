@@ -56,6 +56,19 @@
             <field name="amount_python_compute">result = (inputs.A41 and inputs.A41.amount)+(inputs.A42 and inputs.A42.amount)+(inputs.A43 and inputs.A43.amount)+(inputs.A44 and inputs.A44.amount)+(inputs.A45 and inputs.A45.amount)+(inputs.A46 and inputs.A46.amount)+(inputs.A47 and inputs.A47.amount)+(inputs.A48 and inputs.A48.amount)+(inputs.A49 and inputs.A49.amount)+(inputs.A491 and inputs.A491.amount)</field>
         </record>
 
+        <!-- Tuntipalkka sahatyöt -->
+        <record id="hr_salary_rule_8" model="hr.salary.rule">
+            <field name="name">Tuntipalkka sahatyöt</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">8</field>
+            <field name="sequence">1</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A81 and inputs.A81.amount)+(inputs.A82 and inputs.A82.amount)+(inputs.A83 and inputs.A83.amount)+(inputs.A84 and inputs.A84.amount)+(inputs.A85 and inputs.A85.amount)+(inputs.A86 and inputs.A86.amount)+(inputs.A87 and inputs.A87.amount)+(inputs.A88 and inputs.A88.amount)+(inputs.A89 and inputs.A89.amount)+(inputs.A891 and inputs.A891.amount)</field>
+        </record>
+
         <!-- Ylityölisä 50% -->
         <record id="hr_salary_rule_11" model="hr.salary.rule">
             <field name="name">Ylityölisä 50%</field>

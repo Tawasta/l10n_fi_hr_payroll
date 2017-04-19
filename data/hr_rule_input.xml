@@ -21,6 +21,12 @@
             <field name="input_id" ref="hr_salary_rule_4" />
         </record>
 
+        <record id="hr_rule_input_A81" model="hr.rule.input">
+            <field name="name">Tuntipalkka sahatyöt</field>
+            <field name="code">A81</field>
+            <field name="input_id" ref="hr_salary_rule_8" />
+        </record>
+
         <record id="hr_rule_input_A151" model="hr.rule.input">
             <field name="name">Arkipyhäkorvaus</field>
             <field name="code">A151</field>
