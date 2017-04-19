@@ -6,7 +6,13 @@
         <record id="hr_rule_input_A11" model="hr.rule.input">
             <field name="name">Tuntipalkka</field>
             <field name="code">A11</field>
-            <field name="input_id" ref="hr_salary_rule_1" />
+            <field name="input_id" ref="hr_payroll.hr_rule_basic" />
+        </record>
+
+        <record id="hr_rule_input_A1021" model="hr.rule.input">
+            <field name="name">Säähaittakorvaus 3%</field>
+            <field name="code">A1021</field>
+            <field name="input_id" ref="hr_salary_rule_102" />
         </record>
 
     </data>

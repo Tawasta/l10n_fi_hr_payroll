@@ -5,7 +5,7 @@
         <!-- Finnish salary rules. Ordered by code -->
 
         <!-- Tuntipalkka -->
-        <record id="hr_salary_rule_1" model="hr.salary.rule">
+        <record id="hr_payroll.hr_rule_basic" model="hr.salary.rule">
             <field name="name">Tuntipalkka</field>
             <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">1</field>
@@ -15,6 +15,59 @@
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.A11 and inputs.A11.amount)+(inputs.A12 and inputs.A12.amount)+(inputs.A13 and inputs.A13.amount)+(inputs.A14 and inputs.A14.amount)+(inputs.A15 and inputs.A15.amount)+(inputs.A16 and inputs.A16.amount)+(inputs.A17 and inputs.A17.amount)+(inputs.A18 and inputs.A18.amount)+(inputs.A19 and inputs.A19.amount)+(inputs.A191 and inputs.A191.amount)</field>
+        </record>
+
+        <!-- KM-korvaus lisähenkilö -->
+        <record id="hr_salary_rule_101" model="hr.salary.rule">
+            <field name="name">KM-korvaus lisähenkilö</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">101</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A1011 and inputs.A1011.amount)+(inputs.A1012 and inputs.A1012.amount)+(inputs.A1013 and inputs.A1013.amount)+(inputs.A1014 and inputs.A1014.amount)+(inputs.A1015 and inputs.A1015.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
+        <!-- Säähaittakorvaus 3% -->
+        <record id="hr_salary_rule_102" model="hr.salary.rule">
+            <field name="name">Säähaittakorvaus 3%</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">102</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A1021 and inputs.A1021.amount)+(inputs.A1022 and inputs.A1022.amount)+(inputs.A1023 and inputs.A1023.amount)+(inputs.A1024 and inputs.A1024.amount)+(inputs.A1025 and inputs.A1025.amount)</field>
+        </record>
+
+        <!-- Rahapalkka -->
+        <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
+            <field name="name">Rahapalkka</field>
+            <field name="category_id" ref="hr_payroll.GROSS" />
+            <field name="code">Brutto</field>
+            <field name="sequence">20</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = categories.BASIC</field>
+        </record>
+
+        <!-- Nettopalkka -->
+        <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
+            <field name="name">Nettopalkka</field>
+            <field name="category_id" ref="hr_payroll.NET" />
+            <field name="code">NET</field>
+            <field name="sequence">1000</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"> result = categories.BASIC + categories.ALW - categories.Vero - categories.LAK - ((contract.membership_fee/100)*categories.Palkka) - categories.VAH </field>
         </record>
 
     </data>
