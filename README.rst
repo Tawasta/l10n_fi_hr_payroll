@@ -26,6 +26,8 @@ Known issues / Roadmap
 Possibly missing rules
 - Ylityölisä 50%
 - Ylityölisä 100%
+- Ylityölisä 150%
+- Ylityölisä 200%
 - Sairausajan korvaus
 
 Credits
