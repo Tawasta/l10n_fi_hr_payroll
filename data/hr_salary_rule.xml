@@ -486,6 +486,19 @@
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
         </record>
 
+        <!-- Puolipäiväraha -->
+        <record id="hr_salary_rule_alw006" model="hr.salary.rule">
+            <field name="name">Puolipäiväraha</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">ALW006</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.ALW0061 and inputs.ALW0061.amount)+(inputs.ALW0062 and inputs.ALW0062.amount)+(inputs.ALW0063 and inputs.ALW0063.amount)+(inputs.ALW0064 and inputs.ALW0064.amount)+(inputs.ALW0065 and inputs.ALW0065.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
