@@ -376,6 +376,20 @@
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
         </record>
 
+        <!-- Puhelinkorvaus -->
+        <record id="hr_salary_rule_57" model="hr.salary.rule">
+            <field name="name">Puhelinkorvaus</field>
+            <field name="category_id" ref="hr_payroll.ASW" />
+            <field name="code">57</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A571 and inputs.A571.amount)+(inputs.A572 and inputs.A572.amount)+(inputs.A573 and inputs.A573.amount)+(inputs.A574 and inputs.A574.amount)+(inputs.A575 and inputs.A575.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
