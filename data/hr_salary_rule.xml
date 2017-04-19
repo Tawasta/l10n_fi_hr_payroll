@@ -69,6 +69,19 @@
             <field name="amount_python_compute"></field>
         </record>
 
+        <!-- Arkipyhäkorvaus -->
+        <record id="hr_salary_rule_15" model="hr.salary.rule">
+            <field name="name">Arkipyhäkorvaus</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">15</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A151 and inputs.A151.amount)+(inputs.A152 and inputs.A152.amount)+(inputs.A153 and inputs.A153.amount)+(inputs.A154 and inputs.A154.amount)+(inputs.A155 and inputs.A155.amount) </field>
+        </record>
+
         <!-- KM-korvaus lisähenkilö -->
         <record id="hr_salary_rule_101" model="hr.salary.rule">
             <field name="name">KM-korvaus lisähenkilö</field>

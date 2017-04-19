@@ -9,6 +9,12 @@
             <field name="input_id" ref="hr_payroll.hr_rule_basic" />
         </record>
 
+        <record id="hr_rule_input_A151" model="hr.rule.input">
+            <field name="name">Arkipyhäkorvaus</field>
+            <field name="code">A151</field>
+            <field name="input_id" ref="hr_salary_rule_102" />
+        </record>
+
         <record id="hr_rule_input_A1021" model="hr.rule.input">
             <field name="name">Säähaittakorvaus 3%</field>
             <field name="code">A1021</field>
