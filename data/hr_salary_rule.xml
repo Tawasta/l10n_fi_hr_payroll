@@ -214,6 +214,19 @@
             <field name="amount_python_compute">result = (inputs.A271 and inputs.A271.amount)</field>
         </record>
 
+        <!-- Urakka sahatyöt -->
+        <record id="hr_salary_rule_3" model="hr.salary.rule">
+            <field name="name">Urakka sahatyöt</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">3</field>
+            <field name="sequence">2</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A31 and inputs.A31.amount)+(inputs.A32 and inputs.A32.amount)+(inputs.A33 and inputs.A33.amount)+(inputs.A34 and inputs.A34.amount)+(inputs.A35 and inputs.A35.amount)+(inputs.A36 and inputs.A36.amount)+(inputs.A37 and inputs.A37.amount)+(inputs.A38 and inputs.A38.amount)+(inputs.A39 and inputs.A39.amount)+(inputs.A391 and inputs.A391.amount)</field>
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
