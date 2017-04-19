@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <!-- Finnish contribution register selections. Ordered by name -->
+        <record id="hr_contribution_register_ennakonpidatyksen_alainen_palkka" model="hr.contribution.register">
+            <field name="name">Ennakonpidätyksen alainen palkka</field>
+        </record>
+
+        <record id="hr_contribution_register_ennakonpidatykset" model="hr.contribution.register">
+            <field name="name">Ennakonpidätykset</field>
+        </record>
+
+        <record id="hr_contribution_register_korvaukset" model="hr.contribution.register">
+            <field name="name">Korvaukset</field>
+        </record>
+
+        <record id="hr_contribution_register_lomapalkka" model="hr.contribution.register">
+            <field name="name">Lomapalkka</field>
+        </record>
+
+        <record id="hr_contribution_register_paivarahat" model="hr.contribution.register">
+            <field name="name">Päivärahat</field>
+        </record>
+
+        <record id="hr_contribution_register_sairasajanpalkka" model="hr.contribution.register">
+            <field name="name">Sairasajanpalkka</field>
+        </record>
+
+        <record id="hr_contribution_register_sairasajan_palkka" model="hr.contribution.register">
+            <field name="name">Sairasajanpalkka</field>
+        </record>
+
+        <record id="hr_contribution_register_sosiaaliturvamaksu" model="hr.contribution.register">
+            <field name="name">Sosiaaliturvamaksu</field>
+        </record>
+
+        <record id="hr_contribution_register_tapaturmavakuutusmaksu" model="hr.contribution.register">
+            <field name="name">Tapaturmavakuutusmaksu</field>
+        </record>
+
+        <record id="hr_contribution_register_tyel" model="hr.contribution.register">
+            <field name="name">TYEL</field>
+        </record>
+
+        <record id="hr_contribution_register_tyontekijat" model="hr.contribution.register">
+            <field name="name">Työntekijät</field>
+        </record>
+
+        <record id="hr_contribution_register_tyottomyysvakuutus" model="hr.contribution.register">
+            <field name="name">Työttömyysvakuutus</field>
+        </record>
+
+    </data>
+</openerp>
