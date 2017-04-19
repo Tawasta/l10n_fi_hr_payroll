@@ -349,6 +349,19 @@
             <field name="amount_python_compute">result = (inputs.ALOMA521 and inputs.ALOMA521.amount)+(inputs.ALOMA522 and inputs.ALOMA522.amount)+(inputs.ALOMA523 and inputs.ALOMA523.amount)+(inputs.ALOMA524 and inputs.ALOMA524.amount)+(inputs.ALOMA525 and inputs.ALOMA525.amount)</field>
         </record>
 
+        <!-- Lomakorvaus -->
+        <record id="hr_salary_rule_53" model="hr.salary.rule">
+            <field name="name">Lomakorvaus</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">53</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A531 and inputs.A531.amount)+(inputs.A532 and inputs.A532.amount)+(inputs.A533 and inputs.A533.amount)+(inputs.A534 and inputs.A534.amount)+(inputs.A535 and inputs.A535.amount)</field>
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
