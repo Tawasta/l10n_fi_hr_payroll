@@ -23,13 +23,14 @@ Usage
 
 Known issues / Roadmap
 ======================
-Possibly missing rules
+Possibly missing rules/amounts
 - Ylityölisä 50%
 - Ylityölisä 100%
 - Ylityölisä 150%
 - Ylityölisä 200%
 - Sairausajan korvaus
 - Osapäiväraha
+- Lomakorv. työsuhteen päättyessä
 
 Possible issues:
 - Code 34 appears twice
