@@ -136,7 +136,6 @@
             <field name="amount_python_compute">result = (inputs.A151 and inputs.A151.amount)+(inputs.A152 and inputs.A152.amount)+(inputs.A153 and inputs.A153.amount)+(inputs.A154 and inputs.A154.amount)+(inputs.A155 and inputs.A155.amount) </field>
         </record>
 
-
         <!-- Rahapalkka -->
         <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
             <field name="name">Rahapalkka</field>
@@ -149,11 +148,48 @@
             <field name="amount_python_compute">result = categories.BASIC</field>
         </record>
 
+        <!-- Ennakonpidätys -->
+        <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
+            <field name="name">Ennakonpidätys</field>
+            <field name="category_id" ref="hr_payroll.GROSS" />
+            <field name="code">ENN</field>
+            <field name="sequence">20</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+#(contract.monthly_income_limit/364)*worked_days.WORK100.number_of_days
+rajakk=(contract.monthly_income_limit)
+rajavv=((contract.yearly_income_limit/364)*worked_days.WORK100.number_of_days)
+
+#normaali A, tämä ok, testattu
+if contract.tax_card_type == "A" and categories.Palkka&lt;rajavv:
+ vero=categories.Palkka*(contract.base_tax_percentage/100)
+
+#kortti A ja kuukausitulo ylittaa rajan, tämä ok
+elif contract.tax_card_type == "A" and categories.Palkka>rajavv:
+ vero=(rajavv*(contract.base_tax_percentage/100))+((categories.Palkka-rajavv)*(contract.extra_tax_percentage/100))
+
+#kortti B, vuositulo ei ylitä rajaa
+elif contract.tax_card_type == "B" and rules.vuosipalkka&lt;contract.yearly_income_limit:
+ vero=categories.Palkka*(contract.base_tax_percentage/100)
+
+#kortti B ylittaa vuosirajan
+elif contract.tax_card_type == "B" and rules.vuosipalkka>contract.yearly_income_limit:
+ vero=categories.Palkka*(contract.extra_tax_percentage/100)
+
+else:
+  vero=categories.Palkka*(contract.base_tax_percentage/100)
+result = vero + (inputs.FIX and inputs.FIX.amount)
+            </field>
+            <field name="register_id" ref="hr_contribution_register_ennakonpidatykset" />
+        </record>
+
         <!-- Pekkaskorvaus -->
         <record id="hr_salary_rule_27" model="hr.salary.rule">
             <field name="name">Pekkaskorvaus</field>
             <field name="category_id" ref="hr_payroll.BASIC" />
-            <field name="code">Brutto</field>
+            <field name="code">27</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
