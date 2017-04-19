@@ -34,6 +34,7 @@ Possibly missing rules/amounts
 - Yksityisajot
 - KM-korvaus mopedi
 - Ulosmittaus
+- Ylityön perusosa
 
 Possible issues:
 - Code 34 appears twice
