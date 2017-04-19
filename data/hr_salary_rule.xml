@@ -499,6 +499,19 @@
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
         </record>
 
+        <!-- Rakennusalan matkakustannusten korvaus -->
+        <record id="hr_salary_rule_alw007" model="hr.salary.rule">
+            <field name="name">Rakennusalan matkakustannusten korvaus</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">ALW007</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.ALW0071 and inputs.ALW0071.amount)+(inputs.ALW0072 and inputs.ALW0072.amount)+(inputs.ALW0073 and inputs.ALW0073.amount)+(inputs.ALW0074 and inputs.ALW0074.amount)+(inputs.ALW0075 and inputs.ALW0075.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
