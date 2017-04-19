@@ -20,7 +20,7 @@
         <!-- Ylityölisä 50% -->
         <record id="hr_salary_rule_11" model="hr.salary.rule">
             <field name="name">Ylityölisä 50%</field>
-            <field name="category_id" ref="hr_salary_rule_category_vahennykset" />
+            <field name="category_id" ref="hr_payroll.BASIC" />
             <field name="code">11</field>
             <field name="sequence">5</field>
             <field name="condition_select">none</field>
@@ -81,7 +81,7 @@
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.A1041 and inputs.A1041.amount)+(inputs.A1042 and inputs.A1042.amount)+(inputs.A1043 and inputs.A1043.amount)+(inputs.A1044 and inputs.A1044.amount)+(inputs.A1045 and inputs.A1045.amount)</field>
-            <field name="register_id" ref="hr_contribution_register_sairasajanpalkka" />
+            <field name="register_id" ref="hr_contribution_register_sairasajan_palkka" />
         </record>
 
         <!-- Vuokra -->
@@ -95,6 +95,19 @@
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
             <field name="amount_python_compute">result = (inputs.Vuokra1 and inputs.Vuokra1.amount)+(inputs.Vuokra2 and inputs.Vuokra2.amount)+(inputs.Vuokra3 and inputs.Vuokra3.amount)+(inputs.Vuokra4 and inputs.Vuokra4.amount)</field>
+        </record>
+
+        <!-- Sairausajan korvaus -->
+        <record id="hr_salary_rule_113" model="hr.salary.rule">
+            <field name="name">Sairausajan korvaus</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">113</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">fix</field>
+            <field name="register_id" ref="hr_contribution_register_sairasajan_korvaus" />
         </record>
 
         <!-- Rahapalkka -->
