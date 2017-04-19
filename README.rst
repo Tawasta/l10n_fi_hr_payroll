@@ -31,6 +31,7 @@ Possibly missing rules/amounts
 - Sairausajan korvaus
 - Osapäiväraha
 - Lomakorv. työsuhteen päättyessä
+- Yksityisajot
 
 Possible issues:
 - Code 34 appears twice
