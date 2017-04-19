@@ -29,6 +29,7 @@ Possibly missing rules
 - Ylityölisä 150%
 - Ylityölisä 200%
 - Sairausajan korvaus
+- Osapäiväraha
 
 Credits
 =======

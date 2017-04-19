@@ -227,6 +227,21 @@
             <field name="amount_python_compute">result = (inputs.A31 and inputs.A31.amount)+(inputs.A32 and inputs.A32.amount)+(inputs.A33 and inputs.A33.amount)+(inputs.A34 and inputs.A34.amount)+(inputs.A35 and inputs.A35.amount)+(inputs.A36 and inputs.A36.amount)+(inputs.A37 and inputs.A37.amount)+(inputs.A38 and inputs.A38.amount)+(inputs.A39 and inputs.A39.amount)+(inputs.A391 and inputs.A391.amount)</field>
         </record>
 
+        <!-- Osapäiväraha -->
+        <record id="hr_salary_rule_31" model="hr.salary.rule">
+            <field name="name">Osapäiväraha</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">31</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (inputs.A311 and inputs.A311.amount)+(inputs.A312 and inputs.A312.amount)+(inputs.A313 and inputs.A313.amount)+(inputs.A314 and inputs.A314.amount)+(inputs.A315 and inputs.A315.amount)</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">fix</field>
+            <field name="amount_python_compute"></field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
