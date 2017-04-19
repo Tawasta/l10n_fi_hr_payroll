@@ -32,6 +32,7 @@ Possibly missing rules/amounts
 - Osapäiväraha
 - Lomakorv. työsuhteen päättyessä
 - Yksityisajot
+- KM-korvaus mopedi
 
 Possible issues:
 - Code 34 appears twice
