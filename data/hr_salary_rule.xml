@@ -364,8 +364,8 @@
 
         <!-- Ateriakorvaus -->
         <record id="hr_salary_rule_55" model="hr.salary.rule">
-            <field name="name">Lomakorvaus</field>
-            <field name="category_id" ref="hr_payroll.ASW" />
+            <field name="name">Ateriakorvaus</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">55</field>
             <field name="sequence">5</field>
             <field name="condition_select">none</field>
@@ -379,7 +379,7 @@
         <!-- Puhelinkorvaus -->
         <record id="hr_salary_rule_57" model="hr.salary.rule">
             <field name="name">Puhelinkorvaus</field>
-            <field name="category_id" ref="hr_payroll.ASW" />
+            <field name="category_id" ref="hr_payroll.ALW" />
             <field name="code">57</field>
             <field name="sequence">5</field>
             <field name="condition_select">none</field>
