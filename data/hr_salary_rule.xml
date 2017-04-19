@@ -362,6 +362,20 @@
             <field name="amount_python_compute">result = (inputs.A531 and inputs.A531.amount)+(inputs.A532 and inputs.A532.amount)+(inputs.A533 and inputs.A533.amount)+(inputs.A534 and inputs.A534.amount)+(inputs.A535 and inputs.A535.amount)</field>
         </record>
 
+        <!-- Ateriakorvaus -->
+        <record id="hr_salary_rule_55" model="hr.salary.rule">
+            <field name="name">Lomakorvaus</field>
+            <field name="category_id" ref="hr_payroll.ASW" />
+            <field name="code">55</field>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A551 and inputs.A551.amount)+(inputs.A552 and inputs.A552.amount)+(inputs.A553 and inputs.A553.amount)+(inputs.A554 and inputs.A554.amount)+(inputs.A555 and inputs.A555.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
