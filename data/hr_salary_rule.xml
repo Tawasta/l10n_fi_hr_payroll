@@ -402,6 +402,19 @@
             <field name="amount_python_compute"></field>
         </record>
 
+        <!-- Sahavähennys -->
+        <record id="hr_salary_rule_61" model="hr.salary.rule">
+            <field name="name">Sahavähennys</field>
+            <field name="category_id" ref="hr_payroll.DED" />
+            <field name="code">61</field>
+            <field name="sequence">4</field>
+            <field name="condition_select">none</field>
+            <field name="quantity">-1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.A611 and inputs.A611.amount)+(inputs.A612 and inputs.A612.amount)+(inputs.A613 and inputs.A613.amount)+(inputs.A614 and inputs.A614.amount)+(inputs.A615 and inputs.A615.amount)*-1</field>
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
