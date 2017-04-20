@@ -683,6 +683,18 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="amount_python_compute"></field>
         </record>
 
+        <!-- Työsuhdematkalippu -->
+        <record id="hr_salary_rule_etu008" model="hr.salary.rule">
+            <field name="name">Työsuhdematkalippu</field>
+            <field name="category_id" ref="hr_salary_rule_category_luontaisetu" />
+            <field name="code">ETU007</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">fix</field>
+            <field name="amount_python_compute"></field>
+        </record>
+
         <!-- Ravintoetu -->
         <record id="hr_salary_rule_etu007" model="hr.salary.rule">
             <field name="name">Ravintoetu</field>
