@@ -3,82 +3,82 @@
     <data noupdate="0">
 
         <!-- Finnish salary rule inputs. Ordered by code -->
-        <record id="hr_rule_input_A11" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A11" model="hr.rule.input">
             <field name="name">Tuntipalkka</field>
             <field name="code">A11</field>
             <field name="input_id" ref="hr_payroll.hr_rule_basic" />
         </record>
 
-        <record id="hr_rule_input_A31" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A31" model="hr.rule.input">
             <field name="name">Urakka sahatyöt</field>
             <field name="code">A31</field>
-            <field name="input_id" ref="hr_salary_rule_3" />
+            <field name="input_id" ref="hr_payroll.hr_rule_3" />
         </record>
 
-        <record id="hr_rule_input_A41" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A41" model="hr.rule.input">
             <field name="name">Urakka muut</field>
             <field name="code">A41</field>
-            <field name="input_id" ref="hr_salary_rule_4" />
+            <field name="input_id" ref="hr_payroll.hr_rule_4" />
         </record>
 
-        <record id="hr_rule_input_A81" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A81" model="hr.rule.input">
             <field name="name">Tuntipalkka sahatyöt</field>
             <field name="code">A81</field>
-            <field name="input_id" ref="hr_salary_rule_8" />
+            <field name="input_id" ref="hr_payroll.hr_rule_8" />
         </record>
 
-        <record id="hr_rule_input_A151" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A151" model="hr.rule.input">
             <field name="name">Arkipyhäkorvaus</field>
             <field name="code">A151</field>
-            <field name="input_id" ref="hr_salary_rule_15" />
+            <field name="input_id" ref="hr_payroll.hr_rule_15" />
         </record>
 
-        <record id="hr_rule_input_A271" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A271" model="hr.rule.input">
             <field name="name">Pekkaskorvaus</field>
             <field name="code">A271</field>
-            <field name="input_id" ref="hr_salary_rule_27" />
+            <field name="input_id" ref="hr_payroll.hr_rule_27" />
         </record>
 
-        <record id="hr_rule_input_A311" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A311" model="hr.rule.input">
             <field name="name">Osapäivärha</field>
             <field name="code">A311</field>
-            <field name="input_id" ref="hr_salary_rule_31" />
+            <field name="input_id" ref="hr_payroll.hr_rule_31" />
         </record>
 
-        <record id="hr_rule_input_A321" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A321" model="hr.rule.input">
             <field name="name">Kokopäiväraha</field>
             <field name="code">A321</field>
-            <field name="input_id" ref="hr_salary_rule_32" />
+            <field name="input_id" ref="hr_payroll.hr_rule_32" />
         </record>
 
-        <record id="hr_rule_input_ALOMA521" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_ALOMA521" model="hr.rule.input">
             <field name="name">Lomaraha</field>
             <field name="code">ALOMA521</field>
-            <field name="input_id" ref="hr_salary_rule_51" />
+            <field name="input_id" ref="hr_payroll.hr_rule_51" />
         </record>
 
-        <record id="hr_rule_input_A1021" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_A1021" model="hr.rule.input">
             <field name="name">Säähaittakorvaus 3%</field>
             <field name="code">A1021</field>
-            <field name="input_id" ref="hr_salary_rule_102" />
+            <field name="input_id" ref="hr_payroll.hr_rule_102" />
         </record>
 
-        <record id="hr_rule_input_ennakko" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_ennakko" model="hr.rule.input">
             <field name="name">Palkkaennakko</field>
             <field name="code">Ennakko</field>
-            <field name="input_id" ref="hr_salary_rule_enn002" />
+            <field name="input_id" ref="hr_payroll.hr_rule_enn002" />
         </record>
 
-        <record id="hr_rule_input_km0021" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_km0021" model="hr.rule.input">
             <field name="name">Kilometrikorvaus</field>
             <field name="code">KM0021</field>
-            <field name="input_id" ref="hr_salary_rule_km002" />
+            <field name="input_id" ref="hr_payroll.hr_rule_km002" />
         </record>
 
-        <record id="hr_rule_input_aloma5111" model="hr.rule.input">
+        <record id="hr_payroll.hr_rule_input_aloma5111" model="hr.rule.input">
             <field name="name">Lomapalkka</field>
             <field name="code">ALOMA5111</field>
-            <field name="input_id" ref="hr_salary_rule_loma511" />
+            <field name="input_id" ref="hr_payroll.hr_rule_loma511" />
         </record>
 
     </data>

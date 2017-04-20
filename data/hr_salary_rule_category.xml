@@ -3,62 +3,62 @@
     <data noupdate="0">
 
         <!-- Finnish salary rule categories. Ordered by name -->
-        <record id="hr_salary_rule_category_ennakkopalkka" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_ennakkopalkka" model="hr.salary.rule.category">
             <field name="name">Ennakkopalkka</field>
             <field name="code">ENN</field>
         </record>
 
-        <record id="hr_salary_rule_category_jasenmaksut" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_jasenmaksut" model="hr.salary.rule.category">
             <field name="name">Jäsenmaksut</field>
             <field name="code">UNI</field>
         </record>
 
-        <record id="hr_salary_rule_category_lakisaateiset_maksut" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_lakisaateiset_maksut" model="hr.salary.rule.category">
             <field name="name">Lakisääteiset maksut</field>
             <field name="code">LAK</field>
         </record>
 
-        <record id="hr_salary_rule_category_luontaisetu" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_luontaisetu" model="hr.salary.rule.category">
             <field name="name">Luontoisetu</field>
             <field name="code">ETU</field>
         </record>
 
-        <record id="hr_salary_rule_category_palkka" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_palkka" model="hr.salary.rule.category">
             <field name="name">Palkka</field>
             <field name="code">Palkka</field>
         </record>
 
-        <record id="hr_salary_rule_category_raportointi" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_raportointi" model="hr.salary.rule.category">
             <field name="name">Raportointi</field>
             <field name="code">RAPA</field>
         </record>
 
-        <record id="hr_salary_rule_category_sote" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_sote" model="hr.salary.rule.category">
             <field name="name">SOTE</field>
             <field name="code">SOTE</field>
         </record>
 
-        <record id="hr_salary_rule_category_tyonantajamaksu" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_tyonantajamaksu" model="hr.salary.rule.category">
             <field name="name">Työnantajamaksu</field>
             <field name="code">TAM</field>
         </record>
 
-        <record id="hr_salary_rule_category_tyontekijamaksu" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_tyontekijamaksu" model="hr.salary.rule.category">
             <field name="name">Työntekijämaksu</field>
             <field name="code">TTM</field>
         </record>
 
-        <record id="hr_salary_rule_category_vahennykset" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_vahennykset" model="hr.salary.rule.category">
             <field name="name">Vähennykset</field>
             <field name="code">VAH</field>
         </record>
 
-        <record id="hr_salary_rule_category_vero" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_vero" model="hr.salary.rule.category">
             <field name="name">Vero</field>
             <field name="code">Vero</field>
         </record>
 
-        <record id="hr_salary_rule_category_vuosipalkka" model="hr.salary.rule.category">
+        <record id="hr_payroll.hr_salary_rule_category_vuosipalkka" model="hr.salary.rule.category">
             <field name="name">Vuosipalkka</field>
             <field name="code">VUO</field>
         </record>
