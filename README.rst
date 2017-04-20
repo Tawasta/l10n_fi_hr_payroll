@@ -25,6 +25,7 @@ Known issues / Roadmap
 ======================
 Possible issues:
 - Code 34 appears twice
+- Ylityölisä 50% is not fixed
 
 Missing
 - Ennakonpidätys 2017

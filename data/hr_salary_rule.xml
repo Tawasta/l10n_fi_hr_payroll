@@ -290,10 +290,10 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
         </record>
 
         <!-- Lomaraha -->
-        <record id="hr_payroll.hr_rule_51" model="hr.salary.rule">
+        <record id="hr_payroll.hr_rule_52" model="hr.salary.rule">
             <field name="name">Lomaraha</field>
             <field name="category_id" ref="hr_payroll.ALW" />
-            <field name="code">51</field>
+            <field name="code">52</field>
             <field name="sequence">6</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
