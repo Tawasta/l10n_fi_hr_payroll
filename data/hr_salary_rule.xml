@@ -918,5 +918,17 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             <field name="amount_python_compute"></field>
         </record>
 
+        <!-- Lounasseteleiden maksu -->
+        <record id="hr_payroll.hr_rule_ttm004" model="hr.salary.rule">
+            <field name="name">Lounasseteleiden maksu</field>
+            <field name="category_id" ref="hr_payroll.hr_salary_rule_category_tyontekijamaksu" />
+            <field name="code">TTM004</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">fix</field>
+            <field name="amount_python_compute"></field>
+        </record>
+
     </data>
 </openerp>
