@@ -149,7 +149,7 @@
         </record>
 
         <!-- Ennakonpidätys -->
-        <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
+        <record id="hr_payroll.hr_rule_enn" model="hr.salary.rule">
             <field name="name">Ennakonpidätys</field>
             <field name="category_id" ref="hr_payroll.GROSS" />
             <field name="code">ENN</field>
