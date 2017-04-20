@@ -22,7 +22,7 @@
 {
     'name': 'Finnish Salary',
     'summary': 'Adds fields to HR contracts for calculating Finnish salaries',
-    'version': '8.0.1.3.27',
+    'version': '8.0.1.4.0',
     'category': 'Human Resources',
     'website': 'http://www.plan1st.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
@@ -43,6 +43,7 @@
         'data/hr_salary_rule_category.xml',
         'data/hr_salary_rule.xml',  # Salary rules refer to contribution register and rule category
         'data/hr_rule_input.xml',  # Inputs refer to salary rules
+        'data/hr_payroll_structure.xml',  # Inputs refer to salary rules
 
         'views/contract_view.xml',
     ],
