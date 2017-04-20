@@ -742,7 +742,19 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
-            <field name="amount_python_compute">result = categories.BASIC + categories.ALW - categories.Vero - categories.LAK - ((contract.membership_fee/100)*categories.Palkka) - categories.VAH </field>
+            <field name="amount_python_compute">result = categories.BASIC + categories.ALW - categories.Vero - categories.LAK - ((contract.membership_fee/100)*categories.Palkka) - categories.VAH</field>
+        </record>
+
+        <!-- Ennakonpidätyksen alainen palkka -->
+        <record id="hr_payroll.hr_rule_palkka001" model="hr.salary.rule">
+            <field name="name">Ennakonpidätyksen alainen palkka</field>
+            <field name="category_id" ref="hr_payroll.NET" />
+            <field name="code">Palkka001</field>
+            <field name="sequence">21</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = categories.BASIC - categories.DED</field>
         </record>
 
     </data>
