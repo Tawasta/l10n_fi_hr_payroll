@@ -420,14 +420,14 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
-            <field name="amount_python_compute">result = result = (inputs.A1031 and inputs.A1031.amount)+(inputs.A1032 and inputs.A1032.amount)+(inputs.A1033 and inputs.A1033.amount)+(inputs.A1034 and inputs.A1034.amount)+(inputs.A1035 and inputs.A1035.amount)</field>
+            <field name="amount_python_compute">result = (inputs.A1031 and inputs.A1031.amount)+(inputs.A1032 and inputs.A1032.amount)+(inputs.A1033 and inputs.A1033.amount)+(inputs.A1034 and inputs.A1034.amount)+(inputs.A1035 and inputs.A1035.amount)</field>
         </record>
 
         <!-- Sairasajanpalkka -->
         <record id="hr_payroll.hr_rule_104" model="hr.salary.rule">
             <field name="name">Sairasajanpalkka</field>
             <field name="category_id" ref="hr_payroll.BASIC" />
-            <field name="code">103</field>
+            <field name="code">104</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
