@@ -29,6 +29,7 @@ Possible issues:
 Missing
 - Ennakonpidätys 2017
 - Ennakonpidätyksen alainen palkka 2017
+- Päivärahamaksu 2017
 
 Credits
 =======
