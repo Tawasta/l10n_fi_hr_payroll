@@ -75,5 +75,11 @@
             <field name="input_id" ref="hr_salary_rule_km002" />
         </record>
 
+        <record id="hr_rule_input_aloma5111" model="hr.rule.input">
+            <field name="name">Lomapalkka</field>
+            <field name="code">ALOMA5111</field>
+            <field name="input_id" ref="hr_salary_rule_loma511" />
+        </record>
+
     </data>
 </openerp>

@@ -720,6 +720,19 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="register_id" ref="hr_contribution_register_korvaukset" />
         </record>
 
+        <!-- Lomapalkka -->
+        <record id="hr_salary_rule_loma511" model="hr.salary.rule">
+            <field name="name">Lomapalkka</field>
+            <field name="category_id" ref="hr_payroll.BASIC" />
+            <field name="code">LOMA511</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.ALOMA5111 and inputs.ALOMA5111.amount)+(inputs.ALOMA5112 and inputs.ALOMA5112.amount)+(inputs.ALOMA5113 and inputs.ALOMA5113.amount)+(inputs.ALOMA5114 and inputs.ALOMA5114.amount)+(inputs.ALOMA5115 and inputs.ALOMA5115.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_lomapalkka" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
