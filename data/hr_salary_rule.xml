@@ -1030,5 +1030,17 @@ result = TYEL+VAKUUTUS+categories.LAK
             </field>
         </record>
 
+        <!-- Rahapalkka -->
+        <record id="hr_payroll.hr_rule_vuo" model="hr.salary.rule">
+            <field name="name">Rahapalkka</field>
+            <field name="category_id" ref="hr_payroll.hr_salary_rule_category_vuosipalkka" />
+            <field name="code">VUO</field>
+            <field name="sequence">14</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"> result=payslip.sum('Brutto','2016-01-01','2016-12-31')+categories.BASIC</field>
+        </record>
+
     </data>
 </openerp>
