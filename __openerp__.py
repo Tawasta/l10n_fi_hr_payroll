@@ -22,7 +22,7 @@
 {
     'name': 'Finnish Salary',
     'summary': 'Adds fields to HR contracts for calculating Finnish salaries',
-    'version': '8.0.1.3.15',
+    'version': '8.0.1.3.16',
     'category': 'Human Resources',
     'website': 'http://www.plan1st.fi',
     'author': 'Oy Tawasta Technologies Ltd.',

@@ -81,5 +81,11 @@
             <field name="input_id" ref="hr_payroll.hr_rule_loma511" />
         </record>
 
+        <record id="hr_payroll.hr_rule_ayop1" model="hr.rule.input">
+            <field name="name">Yöpymiskorvaus</field>
+            <field name="code">AYOP1</field>
+            <field name="input_id" ref="hr_payroll.hr_rule_yop" />
+        </record>
+
     </data>
 </openerp>
