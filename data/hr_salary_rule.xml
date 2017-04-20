@@ -520,7 +520,7 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">code</field>
-            <field name="amount_python_compute">result = (inputs.ALW0041 and inputs.ALW0041.amount)+(inputs.ALW0042 and inputs.ALW0042.amount)+(inputs.ALW0043 and inputs.ALW0043.amount)+(inputs.ALW0044 and inputs.ALW0044.amount)+(inputs.ALW0045 and inputs.ALW0045.amount)</field>
+            <field name="amount_python_compute"> result = (inputs.ALW0051 and inputs.ALW0051.amount)+(inputs.ALW0052 and inputs.ALW0052.amount)+(inputs.ALW0053 and inputs.ALW0053.amount)+(inputs.ALW0054 and inputs.ALW0054.amount)+(inputs.ALW0055 and inputs.ALW0055.amount)</field>
             <field name="register_id" ref="hr_payroll.hr_contribution_register_korvaukset" />
         </record>
 
