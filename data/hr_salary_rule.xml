@@ -894,11 +894,11 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             <field name="amount_python_compute"></field>
         </record>
 
-        <!-- Ay-jäsenmaksu -->
-        <record id="hr_payroll.hr_rule_ttm001" model="hr.salary.rule">
-            <field name="name">Ay-jäsenmaksu</field>
+        <!-- Korko -->
+        <record id="hr_payroll.hr_rule_ttm002" model="hr.salary.rule">
+            <field name="name">Korko</field>
             <field name="category_id" ref="hr_payroll.hr_salary_rule_category_tyontekijamaksu" />
-            <field name="code">TTM001</field>
+            <field name="code">TTM002</field>
             <field name="sequence">5</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="True" />
