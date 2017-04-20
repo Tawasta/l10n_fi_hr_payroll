@@ -69,5 +69,11 @@
             <field name="input_id" ref="hr_salary_rule_enn002" />
         </record>
 
+        <record id="hr_rule_input_km0021" model="hr.rule.input">
+            <field name="name">Kilometrikorvaus</field>
+            <field name="code">KM0021</field>
+            <field name="input_id" ref="hr_salary_rule_km002" />
+        </record>
+
     </data>
 </openerp>

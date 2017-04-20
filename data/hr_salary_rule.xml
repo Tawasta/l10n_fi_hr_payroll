@@ -707,6 +707,19 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="amount_python_compute"></field>
         </record>
 
+        <!-- Kilometrikorvaus -->
+        <record id="hr_salary_rule_km002" model="hr.salary.rule">
+            <field name="name">Kilometrikorvaus</field>
+            <field name="category_id" ref="hr_payroll.ALW" />
+            <field name="code">KM002</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="True" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (inputs.KM0021 and inputs.KM0021.amount)+(inputs.KM0022 and inputs.KM0022.amount)+(inputs.KM0023 and inputs.KM0023.amount)+(inputs.KM0024 and inputs.KM0024.amount)</field>
+            <field name="register_id" ref="hr_contribution_register_korvaukset" />
+        </record>
+
         <!-- Nettopalkka -->
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="name">Nettopalkka</field>
