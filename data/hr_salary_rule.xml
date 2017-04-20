@@ -932,7 +932,7 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
 
         <!-- Muu työntekijämaksu -->
         <record id="hr_payroll.hr_rule_ttm005" model="hr.salary.rule">
-            <field name="name">Lounasseteleiden maksu</field>
+            <field name="name">Muu työntekijämaksu</field>
             <field name="category_id" ref="hr_payroll.hr_salary_rule_category_tyontekijamaksu" />
             <field name="code">TTM005</field>
             <field name="sequence">5</field>
@@ -940,6 +940,26 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             <field name="appears_on_payslip" eval="True" />
             <field name="amount_select">fix</field>
             <field name="amount_python_compute"></field>
+        </record>
+
+        <!-- Työntekijän TyEL-maksu -->
+        <record id="hr_payroll.hr_rule_ttm007" model="hr.salary.rule">
+            <field name="name">Työntekijän TyEL-maksu</field>
+            <field name="category_id" ref="hr_payroll.hr_salary_rule_category_lakisaateiset_maksut" />
+            <field name="code">TTM007</field>
+            <field name="sequence">24</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+if employee.age > 52:
+  vero=categories.Palkka*(7.20/100)
+
+else:
+  vero=categories.Palkka*(5.70/100)
+result = vero
+            </field>
+            <field name="register_id" ref="hr_payroll.hr_contribution_register_tyel" />
         </record>
 
     </data>
