@@ -809,7 +809,7 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             <field name="name">Päivärahamaksu</field>
             <field name="category_id" ref="hr_payroll.hr_salary_rule_category_vuosipalkka" />
             <field name="code">SOTE001</field>
-            <field name="sequence">1006</field>
+            <field name="sequence">28</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
