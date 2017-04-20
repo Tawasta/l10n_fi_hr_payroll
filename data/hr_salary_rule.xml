@@ -837,7 +837,21 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
-            <field name="amount_python_compute">rresult = categories.Palkka* (2.12/100)</field>
+            <field name="amount_python_compute">result = categories.Palkka* (2.12/100)</field>
+            <field name="register_id" ref="hr_contribution_register_sosiaaliturvamaksu" />
+        </record>
+
+        <!-- TA Sosiaaliturvamaksu velka -->
+        <record id="hr_payroll.hr_rule_tam002_2" model="hr.salary.rule">
+            <field name="name">TA sosiaaliturvamaksu velka</field>
+            <field name="parent_rule_id" ref="hr_payroll.hr_rule_tam002" />
+            <field name="category_id" ref="hr_salary_rule_category_tyonantajamaksu" />
+            <field name="code">TAM002_2</field>
+            <field name="sequence">25</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"> result = categories.Palkka* (2.12/100) </field>
             <field name="register_id" ref="hr_contribution_register_sosiaaliturvamaksu" />
         </record>
 
