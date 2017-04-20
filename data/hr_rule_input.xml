@@ -63,5 +63,11 @@
             <field name="input_id" ref="hr_salary_rule_102" />
         </record>
 
+        <record id="hr_rule_input_ennakko" model="hr.rule.input">
+            <field name="name">Palkkaennakko</field>
+            <field name="code">Ennakko</field>
+            <field name="input_id" ref="hr_salary_rule_enn002" />
+        </record>
+
     </data>
 </openerp>
