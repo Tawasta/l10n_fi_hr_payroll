@@ -770,7 +770,7 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
         </record>
 
         <!-- Verottomat korvaukset 2016 -->
-        <record id="hr_payroll.hr_rule_palkka2016" model="hr.salary.rule">
+        <record id="hr_payroll.hr_rule_palkkiot2016" model="hr.salary.rule">
             <field name="name">Verottomat korvaukset</field>
             <field name="category_id" ref="hr_payroll.hr_salary_rule_category_vuosipalkka" />
             <field name="code">Palkkiot2016</field>
