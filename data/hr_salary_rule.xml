@@ -816,5 +816,17 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             <field name="amount_python_compute">result = payslip.sum('SOTE001','2016-01-01','2016-12-31') + categories.SOTE</field>
         </record>
 
+        <!-- TA ryhmähenkivakuutusmaksu -->
+        <record id="hr_payroll.hr_rule_tam001" model="hr.salary.rule">
+            <field name="name">TA ryhmähenkivakuutusmaksu</field>
+            <field name="category_id" ref="hr_salary_rule_category_vuosipalkka" />
+            <field name="code">TAM001</field>
+            <field name="sequence">5</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">fix</field>
+            <field name="amount_python_compute">result = payslip.sum('SOTE001','2016-01-01','2016-12-31') + categories.SOTE</field>
+        </record>
+
     </data>
 </openerp>
