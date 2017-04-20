@@ -792,5 +792,17 @@ result = KILOMETRIT+ATERIAKORVAUS+SAIRAUS+PUHELIN+YO+Yllapito+PAIVARAHA+PALKKIOT
             </field>
         </record>
 
+        <!-- Päivärahamaksu -->
+        <record id="hr_payroll.hr_rule_sote001" model="hr.salary.rule">
+            <field name="name">Päivärahamaksu</field>
+            <field name="category_id" ref="hr_salary_rule_category_vuosipalkka" />
+            <field name="code">SOTE001</field>
+            <field name="sequence">28</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = categories.Palkka* (0.82/100)</field>
+        </record>
+
     </data>
 </openerp>
