@@ -757,5 +757,17 @@ result = vero + (inputs.FIX and inputs.FIX.amount)
             <field name="amount_python_compute">result = categories.BASIC - categories.DED</field>
         </record>
 
+        <!-- Ennakonpidätyksen alainen palkka -->
+        <record id="hr_payroll.hr_rule_palkka2016" model="hr.salary.rule">
+            <field name="name">Ennakonpidätyksen alainen palkka</field>
+            <field name="category_id" ref="hr_salary_rule_category_vuosipalkka" />
+            <field name="code">Palkka2016</field>
+            <field name="sequence">1002</field>
+            <field name="quantity">1.0</field>
+            <field name="appears_on_payslip" eval="False" />
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = payslip.sum('Palkka001','2016-01-01','2016-12-31') + categories.Palkka</field>
+        </record>
+
     </data>
 </openerp>
