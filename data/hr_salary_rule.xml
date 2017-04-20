@@ -153,7 +153,7 @@
             <field name="name">Ennakonpidätys</field>
             <field name="category_id" ref="hr_payroll.GROSS" />
             <field name="code">ENN</field>
-            <field name="sequence">20</field>
+            <field name="sequence">22</field>
             <field name="quantity">1.0</field>
             <field name="appears_on_payslip" eval="False" />
             <field name="amount_select">code</field>
