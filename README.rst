@@ -26,6 +26,9 @@ Known issues / Roadmap
 Possible issues:
 - Code 34 appears twice
 
+Missing
+- Ennakonpidätys 2017
+
 Credits
 =======
 
