@@ -59,6 +59,11 @@ Contributors
 * Sami Mesiä <sami.mesia@plan1st.fi>
 * Vipin Kumar Tripathi <vipin.tripathi@verts.co.in>
 
+Images
+------
+
+* Module icon from Open Icon Library (http://sourceforge.net/projects/openiconlibrary/files/)
+
 Maintainer
 ----------
 

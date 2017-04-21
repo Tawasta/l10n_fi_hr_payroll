@@ -22,7 +22,7 @@
 {
     'name': 'Finland - Payroll',
     'summary': 'Finnish Payroll Rules',
-    'version': '8.0.1.4.2',
+    'version': '8.0.1.4.3',
     'category': 'Human Resources',
     'website': 'http://www.plan1st.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
