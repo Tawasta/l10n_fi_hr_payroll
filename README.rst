@@ -2,11 +2,26 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-==============
-Finnish Salary
-==============
+=================
+Finland - Payroll
+=================
 
-Adds fields to HR contracts for calculating Finnish salaries
+Finnish Payroll Rules
+
+**Features**
+
+- Employee payslips
+- Employee contracts
+- Employee benefits
+- Pay days
+
+**Rules and categories**
+
+- Contribution registers "Lisärekisteri"
+- Salary rules "Palkkasäännöt"
+- Salary rule categories "Palkkasääntöjen kategoriat"
+- Payroll structures "Palkkarakenne" for monthly salary "kuukausipalkka" and hourly salary "tuntipalkka"
+- Salary rule inputs "Syötteet"
 
 Installation
 ============
