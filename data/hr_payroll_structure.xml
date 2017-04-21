@@ -6,14 +6,81 @@
         <record id="hr_payroll.structure_base" model="hr.payroll.structure">
             <field name="name">Kuukausipalkka</field>
             <field name="code">BASE</field>
-            <field name="rule_ids" />
+            <field name="rule_ids" eval="[(6, 0, [
+                ref('hr_payroll.hr_rule_taxable'),
+                ref('hr_payroll.hr_rule_net'),
+                ref('hr_payroll.hr_rule_palkka001'),
+                ref('hr_payroll.hr_rule_palkka2016'),
+                ref('hr_payroll.hr_rule_tam002'),
+                ref('hr_payroll.hr_rule_2'),
+                ref('hr_payroll.hr_rule_53'),
+                ref('hr_payroll.hr_rule_99'),
+                ref('hr_payroll.hr_rule_104'),
+                ref('hr_payroll.hr_rule_113'),
+                ref('hr_payroll.hr_rule_alw003'),
+                ref('hr_payroll.hr_rule_enn002'),
+                ref('hr_payroll.hr_rule_enn2016'),
+                ref('hr_payroll.hr_rule_km002'),
+                ref('hr_payroll.hr_rule_loma511'),
+                ref('hr_payroll.hr_rule_tam004'),
+                ref('hr_payroll.hr_rule_ttm007'),
+                ref('hr_payroll.hr_rule_ttm008'),
+                ref('hr_payroll.hr_rule_ttm011'),
+                ref('hr_payroll.hr_rule_ttm2016'),
+                ref('hr_payroll.hr_rule_vuo'),
+                ref('hr_payroll.hr_rule_yop'),
+                ref('hr_payroll.hr_rule_52'),
+                ref('hr_payroll.hr_rule_enn'),
+                ref('hr_payroll.hr_rule_palkkiot2016')
+            ])]" />
         </record>
 
         <record id="hr_payroll.structure_hourly" model="hr.payroll.structure">
             <field name="name">Tuntityöntekijä</field>
             <field name="code">Tuntityöntekijä</field>
             <field name="parent_id" ref="hr_payroll.structure_base" />
-            <field name="rule_ids" />
+            <field name="rule_ids" eval="[(6, 0, [
+                ref('hr_payroll.hr_rule_taxable'),
+                ref('hr_payroll.hr_rule_net'),
+                ref('hr_payroll.hr_rule_basic'),
+                ref('hr_payroll.hr_rule_palkka001'),
+                ref('hr_payroll.hr_rule_palkka2016'),
+                ref('hr_payroll.hr_rule_sote001'),
+                ref('hr_payroll.hr_rule_tam002'),
+                ref('hr_payroll.hr_rule_2'),
+                ref('hr_payroll.hr_rule_3'),
+                ref('hr_payroll.hr_rule_4'),
+                ref('hr_payroll.hr_rule_8'),
+                ref('hr_payroll.hr_rule_15'),
+                ref('hr_payroll.hr_rule_27'),
+                ref('hr_payroll.hr_rule_32'),
+                ref('hr_payroll.hr_rule_51'),
+                ref('hr_payroll.hr_rule_53'),
+                ref('hr_payroll.hr_rule_57'),
+                ref('hr_payroll.hr_rule_61'),
+                ref('hr_payroll.hr_rule_99'),
+                ref('hr_payroll.hr_rule_102'),
+                ref('hr_payroll.hr_rule_103'),
+                ref('hr_payroll.hr_rule_104'),
+                ref('hr_payroll.hr_rule_107'),
+                ref('hr_payroll.hr_rule_122'),
+                ref('hr_payroll.hr_rule_alw001'),
+                ref('hr_payroll.hr_rule_enn002'),
+                ref('hr_payroll.hr_rule_enn2016'),
+                ref('hr_payroll.hr_rule_km002'),
+                ref('hr_payroll.hr_rule_loma511'),
+                ref('hr_payroll.hr_rule_tam004'),
+                ref('hr_payroll.hr_rule_ttm007'),
+                ref('hr_payroll.hr_rule_ttm008'),
+                ref('hr_payroll.hr_rule_ttm011'),
+                ref('hr_payroll.hr_rule_ttm2016'),
+                ref('hr_payroll.hr_rule_vuo'),
+                ref('hr_payroll.hr_rule_yop'),
+                ref('hr_payroll.hr_rule_52'),
+                ref('hr_payroll.hr_rule_enn'),
+                ref('hr_payroll.hr_rule_palkkiot2016'),
+                ref('hr_payroll.hr_rule_sote2016')
+            ])]" />
         </record>
 
     </data>
