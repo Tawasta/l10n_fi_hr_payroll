@@ -38,11 +38,13 @@ Usage
 
 Known issues / Roadmap
 ======================
-Possible issues:
+Possible issues
+
 - Code 34 appears twice
 - Ylityölisä 50% is not fixed
 
 Missing
+
 - Ennakonpidätys 2017
 - Ennakonpidätyksen alainen palkka 2017
 - Päivärahamaksu 2017
