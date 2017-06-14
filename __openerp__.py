@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Author: Oy Tawasta OS Technologies Ltd.
+#    Author: Plan First Oy, Oy Tawasta OS Technologies Ltd.
 #    Copyright Plan First Oy (http://www.plan1st.fi/)
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -24,8 +24,8 @@
     'summary': 'Finnish Payroll Rules',
     'version': '8.0.1.4.3',
     'category': 'Human Resources',
-    'website': 'http://www.plan1st.fi',
-    'author': 'Oy Tawasta Technologies Ltd.',
+    'website': 'https://github.com/tawasta/l10n_fi_hr_payroll',
+    'author': 'Plan First Oy, Oy Tawasta OS Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
     'installable': True,
